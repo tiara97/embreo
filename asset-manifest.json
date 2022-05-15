@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.js": "/embreo/static/js/main.73ac20d7.js",
+    "static/js/787.209ce232.chunk.js": "/embreo/static/js/787.209ce232.chunk.js",
+    "index.html": "/embreo/index.html",
+    "main.73ac20d7.js.map": "/embreo/static/js/main.73ac20d7.js.map",
+    "787.209ce232.chunk.js.map": "/embreo/static/js/787.209ce232.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.73ac20d7.js"
+  ]
+}
