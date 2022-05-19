@@ -25,7 +25,6 @@ function userKeepLogin() {
   return async (dispatch) => {
     try {
       const token = localStorage.getItem("token");
-      const id = localStorage.getItem("id");
       const resUser = await Axios.post(URL + "/keepLogin", { token });
       dispatch({ type: "LOGIN", payload: resUser.data });
     } catch (e) {

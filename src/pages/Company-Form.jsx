@@ -8,7 +8,7 @@ const CompanyForm = () => {
   const dispatch = useDispatch();
   const [event, setEvent] = useState("Event 1");
 
-  const { id, company } = useSelector((state) => {
+  const { company } = useSelector((state) => {
     return {
       id: state.userReducer.id,
       company: state.userReducer.company,

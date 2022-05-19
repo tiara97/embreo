@@ -13,11 +13,10 @@ import { Navigate } from "react-router-dom";
 
 const Home = () => {
   const dispatch = useDispatch();
-  const { id, type, errorLogin, token } = useSelector((state) => {
+  const { id, type, errorLogin  } = useSelector((state) => {
     return {
       id: state.userReducer.id,
       type: state.userReducer.type,
-      token: state.userReducer.token,
       errorLogin: state.userReducer.errorLogin,
     };
   });
