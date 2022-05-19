@@ -12,7 +12,6 @@ import { UserAction } from "../actions/user-action";
 import { Navigate } from "react-router-dom";
 
 const Home = () => {
-  console.log("ini home");
   const dispatch = useDispatch();
   const { id, type, errorLogin, token } = useSelector((state) => {
     return {
@@ -24,11 +23,9 @@ const Home = () => {
   });
 
   function handleLogin(value) {
-    console.log(value);
     const body = { username: value.username, password: value.password };
     dispatch(UserAction.userLogin(body));
   }
-  console.log("di home", id, type, token, errorLogin);
 
   if (id && type === "Vendor" && errorLogin === "")
     return <Navigate to="/vendor" />;

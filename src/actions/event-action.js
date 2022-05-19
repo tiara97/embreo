@@ -5,7 +5,6 @@ const url = `http://localhost:2000/api/events`;
 function getEvents(id, body) {
   return async (dispatch) => {
     try {
-      console.log(id, body)
       const res = await Axios.post(`${url}/get/${id}`, body);
       dispatch({
         type: "GET_EVENT",
@@ -34,7 +33,6 @@ function postEvent(body) {
 function editEvent(id, body) {
   return async (dispatch) => {
     try {
-      console.log(id, body)
       const res = await Axios.patch(`${url}/patch/${id}`, body);
       dispatch({
         type: "EDIT_EVENT",

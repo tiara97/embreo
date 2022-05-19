@@ -1,0 +1,30 @@
+[
+	{
+		"id" : 1,
+		"username" : "Tiara",
+		"password" : "123",
+		"company" : "PT ABC",
+		"type" : "Client"
+	},
+	{
+		"id" : 2,
+		"username" : "Dita",
+		"password" : "qwerty",
+		"company" : "PT Vendor",
+		"type" : "Vendor"
+	},
+	{
+		"id" : 3,
+		"username" : "Budi",
+		"password" : "abc",
+		"company" : "PT Oke",
+		"type" : "Vendor"
+	},
+	{
+		"id" : 4,
+		"username" : "Alex",
+		"password" : "123",
+		"company" : "PT XYZ",
+		"type" : "Client"
+	}
+]

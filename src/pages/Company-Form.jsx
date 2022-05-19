@@ -14,7 +14,6 @@ const CompanyForm = () => {
       company: state.userReducer.company,
     };
   });
-  console.log("copmany form", id, company);
 
   function handleSubmit(value) {
     dispatch(

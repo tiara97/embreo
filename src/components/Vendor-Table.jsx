@@ -63,7 +63,6 @@ const VendorTableComponent = ({ eventData }) => {
       </TableHeader>
       <TableBody>
         {eventData.map((item, i) => {
-          console.log("render ulang");
           return <BodyTableComponent item={item} index={i} />;
         })}
       </TableBody>

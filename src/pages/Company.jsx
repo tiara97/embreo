@@ -15,7 +15,6 @@ const Company = () => {
       id: state.userReducer.id,
     };
   });
-  console.log("ini company", type, id);
 
   useEffect(() => {
     dispatch(EventAction.getEvents(id, { type }));

@@ -23,19 +23,13 @@ const theme = {
 const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
-    console.log("masuk efect");
     dispatch(UserAction.userKeepLogin());
   }, []);
-  const { type, id, username, company } = useSelector((state) => {
+  const { type } = useSelector((state) => {
     return {
       type: state.userReducer.type,
-      company: state.userReducer.company,
-      id: state.userReducer.id,
-      username: state.userReducer.username,
     };
   });
-
-  console.log("di app", type, id, username, company);
 
   if (type === "Vendor")
     return (

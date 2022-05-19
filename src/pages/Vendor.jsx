@@ -15,7 +15,6 @@ const Vendor = ({ props }) => {
       id: state.userReducer.id,
     };
   });
-  console.log("ini vendor", type, id);
 
   useEffect(() => {
     dispatch(EventAction.getEvents(id, { type }));

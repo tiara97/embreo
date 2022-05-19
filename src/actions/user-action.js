@@ -6,7 +6,6 @@ function userLogin(body) {
   return async (dispatch) => {
     try {
       const res = await Axios.post(`${url}/login`, body);
-      console.log("userlogin", res.data);
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("id", res.data.id);
       localStorage.setItem("type", res.data.type);
@@ -27,9 +26,7 @@ function userKeepLogin() {
     try {
       const token = localStorage.getItem("token");
       const id = localStorage.getItem("id");
-      console.log("keeplogin", token, id);
       const resUser = await Axios.post(URL + "/keepLogin", { token });
-      console.log("keep login", token, id, resUser);
       dispatch({ type: "LOGIN", payload: resUser.data });
     } catch (e) {
       console.error(e.response ? e.response.data : e);

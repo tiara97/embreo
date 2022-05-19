@@ -7,7 +7,6 @@ const INIT_STATE = {
 export const eventReducer = (state = INIT_STATE, action) => {
   switch (action.type) {
     case "GET_EVENT":
-      console.log(action.payload, "action");
       let eventData = [];
       action.payload.forEach((item) => {
         eventData.push({
@@ -34,10 +33,8 @@ export const eventReducer = (state = INIT_STATE, action) => {
         eventData,
       };
     case "POST_EVENT":
-      console.log(action.payload);
       return { ...state, eventData: action.payload };
     case "EDIT_EVENT":
-      console.log(action.payload);
       return { ...state, eventData: action.payload };
     default:
       return state;
